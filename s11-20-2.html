@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">taper votre nom:
+        <input  id="note">
+    </label>
+    <input type="button" value="Envoyer" onclick="note()">
+    <div id="msg"></div>
+    
+    <script>
+        function note(){
+            let note=document.getElementById("note").value;
+            let message="";
+            if(Number(note)>=10){
+           // document.write("vous avez reussi");
+              message="vous avez reussi";
+            }
+            else{
+            //document.write("vous avez echoué");
+            message="vous avez echoué";
+            }
+            document.getElementById("msg").innerHTML=message;
+        }
+
+       
+    </script>
+</body>
+</html>
